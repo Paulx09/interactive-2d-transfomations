@@ -1,0 +1,31 @@
+body {
+    background: lightslategray;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+canvas {
+    border: 5px solid whitesmoke;
+    display: block;
+    margin-bottom: 80px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.controls {
+    display: inline;
+    margin-left: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 150px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    display: inline;
+    margin-bottom: 5px;
+}
+#color {
+    box-shadow: 0 0 3px 2px blanchedalmond;
+}
