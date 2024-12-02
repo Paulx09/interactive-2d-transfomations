@@ -25,3 +25,6 @@
    git clone https://github.com/tu-usuario/Interactive-2D-Transformations.git
 2. Abre index.html en tu navegador favorito.
 3. ¡Empieza a interactuar con los controles para experimentar transformaciones!
+
+## 🌟 Autor
+- Paulo Armey
