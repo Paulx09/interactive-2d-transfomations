@@ -71,11 +71,13 @@ function setShape(shape) {
             break;
         case 'circle': // Círculo
             const segments = 36;
-            positions = new Float32Array(segments * 2);
-            for (let i = 0; i < segments; i++) {
+            positions = new Float32Array((segments + 2) * 2);
+            positions[0] = 0; // x
+            positions[1] = 0; // y
+            for (let i = 0; i <= segments; i++) {
                 const angle = i * 2 * Math.PI / segments;
-                positions[i * 2] = 0.5 * Math.cos(angle);
-                positions[i * 2 + 1] = 0.5 * Math.sin(angle);
+                positions[(i + 1) * 2] = 0.5 * Math.cos(angle); // x
+                positions[(i + 1) * 2 + 1] = 0.5 * Math.sin(angle); // y
             }
             gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
             break;
